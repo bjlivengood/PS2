@@ -1,9 +1,9 @@
 #====================================================
 # Filename: Prob3.txt
 # 
-# Your name:
-# Who did you work with (if anyone)?:
-# Estimate for time spent (in hrs)?:
+# Your name: Baily Livengood
+# Who did you work with (if anyone)?: Nobody
+# Estimate for time spent (in hrs)?: .5
 #====================================================
 
 In the space below, describe your algorithm in an amount of detail that would ensure
@@ -11,5 +11,6 @@ that someone clueless about the problem could still implement your solution and 
 it work for any of the allowed values of A, B, and d. Use complete sentences and organize your work nicely.
 
 ---
+Given the variables of A, B, and d, the algorithm would first find the area for both A^2, and B^2. Next, it would have to perform the function A + B - d = total_length. This way, we can find the length of the bottom edge no matter what the variables are. Next, we need to know if a or b is bigger. Either way, we need add A^2 to B^2 from what we did before, and subtract d * the smaller value. We can use an if statement for this which would look like: If A > B: (A^2 + B^2) - (d * B) else: (A^2 + B^2) - (d * A). This would work if d = 0 as well because it would subtract 0. It also works for if d = a or d = b because it would negate the first part of the function leaving only the larger square.
 
 
